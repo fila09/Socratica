@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/media.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap" rel="stylesheet" />
+  
+  <title>Сократика</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container container">
+        <a href="index.html" class="header__logo">
+          <img src="img/logo.svg" alt="Logo" />
+        </a>
+        <div class="header__buttons">
+          <a href="#" class="header__button-home screen-04__btn"></a>
+          <a href="#" class="header__button-back form__back-btn"></a>
+          <button class="header__slideshow form__next-btn">Слайд-шоу</button>
+          <button class="header__slideshow form__next-btn form__save-btn">Сохранить</button>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <section class="page__main main">
+        <div class="main__container container-screen-04 screen-04">
+          <div class="screen-04__object">
+            <iframe id="myIframe" src="screen-03_1.html"></iframe>
+          </div>
+
+          <div class="screen-04__slides-box">
+            <div class="screen-04__slides">
+              <div class="screen-04__slides-content">
+                <div class="screen-04__slide">1</div>
+              </div>
+              <div class="screen-04__slides-content">
+                <div class="screen-04__slide">2</div>
+              </div>
+              <div class="screen-04__slides-content">
+                <div class="screen-04__slide">3</div>
+              </div>
+              <div class="screen-04__slides-content">
+                <div class="screen-04__slide">4</div>
+              </div>
+              <div class="screen-04__slides-content">
+                <div class="screen-04__slide">5</div>
+              </div>
+              <div class="screen-04__slides-content">
+                <div class="screen-04__slide">6</div>
+              </div>
+              <div class="screen-04__slides-content">
+                <div class="screen-04__slide">7</div>
+              </div>
+              <div class="screen-04__slides-content">
+                <div class="screen-04__slide">8</div>
+              </div>
+              <div class="screen-04__slides-content">
+                <div class="screen-04__slide">9</div>
+              </div>
+              <div class="screen-04__slides-content">
+                <div class="screen-04__slide">10</div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="editOverlay"></div>
+
+          <div id="editModal" class="screen-04__modal">
+            <div class="screen-04__container">
+              <h4 class="screen-04__modal-title">
+                Сейчас вы сможете отредактировать всю необходимую вам информацию
+              </h4>
+              
+              <div class="screen-04__modal-list">
+                <ul class="list__items">
+                  <li class="list__item">
+                    <p>На слайдах с утвержденными темами нажмите на любое предложение, чтобы сгенерировать его заново</p>
+                  </li>
+                  <li class="list__item">
+                    <p>На слайдах с интерактивом нажмите на заголовок, чтобы поменять его на новый</p>
+                  </li>
+                </ul>
+              </div>
+              
+              <button id="closeButtonModal" class="screen-04__modal-btn form__next-btn">
+                Приступить к редактированию
+              </button>
+            </div>
+          </div>
+
+          <div id="formModal" class="modal-form">
+            <div class="screen-04__container modal-form__container">
+              <button class="form__cancel-modal"></button>
+              <h4 class="screen-04__modal-title modal-form__title">
+                Для получения бесплатного доступа к презентации заполните данные ниже
+              </h4>
+              
+              <div class="main__form form">
+                <form action="#" id="form" class="form">
+                  <div class="form__container container-form">
+                    <div class="form__box box-input">
+                      <input type="text" id="emailInput" class="form__input" placeholder="Напишите свою почту"
+                        autocomplete="off">
+                      <label for="answerInput" class="form__label label">Почта</label>
+                    </div>
+                    <div class="form__box box-input">
+                      <input type="text" id="nameInput" class="form__input" placeholder="Напишите свое имя"
+                        autocomplete="off">
+                      <label for="answerInput" class="form__label label">Имя</label>
+                    </div>
+                  </div>
+                  <div id="errorMessage" class="error-message">Пожалуйста, заполните все поля формы.</div>
+                  <div class="submit-btn">
+                    <button type="submit" id="formButtonModal" class="screen-04__modal-btn form__next-btn submit-button">
+                      Зарегистрироваться
+                    </button>
+                  </div>
+                </form>
+                
+              </div>
+              
+            </div>
+          </div>
+
+          <div id="linkModal" class="modal-link">
+            <div class="screen-04__container modal-form__container">
+              
+              <div class="modal-link__header">
+                <h4 class="screen-04__modal-title">
+                  Ссылка на презентацию
+                </h4>
+                <button id="closeLinkModal" class="form__cancel-modal"></button>
+              </div>
+              <div class="modal-link__wrap">
+                <input type="text" class="modal-link__input"
+                  autocomplete="off" value="https://www.figma.com/file/BWum2SbyMCpLEXrukJkyXV/%D0%A1%D0%BE%D0%BA%D1%80%D0%B0%D1%82%D0%B8%D0%BA%D0%B0?type=design&node-id=1-2&mode=design">
+                <button class="modal-link__btn"></button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@5"></script>
+  <script src="js/screenFour.js"></script>
+</body>
+
+</html>

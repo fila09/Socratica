@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/media.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/dragula.min.css" />
+  <script src="js/dragula.min.js"></script>
+
+  <title>Сократика</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container container">
+        <a href="index.html" class="header__logo">
+          <img src="img/logo.svg" alt="Logo" />
+        </a>
+      </div>
+    </header>
+    <main class="page">
+      <section class="page__main main">
+        <div class="main__container container container-screen-02">
+          <div class="main__content">
+            <h2 class="main__subtitle">
+              02 Создайте подтемы для изучения на уроке
+            </h2>
+            <div class="main__testimonial">
+              <div class="main__header-subject">
+                <h3 class="header-test">Рекомендации по подтемам</h3>
+                <div class="main__button-header">
+                  <button class="btn-blue btn-generation">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="vuesax/linear/refresh-2">
+                      <g id="refresh-2">
+                      <path id="Vector" d="M22 12.5C22 18.02 17.52 22.5 12 22.5C6.48 22.5 3.11 16.94 3.11 16.94M3.11 16.94H7.63M3.11 16.94V21.94M2 12.5C2 6.98 6.44 2.5 12 2.5C18.67 2.5 22 8.06 22 8.06M22 8.06V3.06M22 8.06H17.56" stroke="#3CA9F0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      </g>
+                    </svg>
+                    Перегенирировать
+                  </button>
+                </div>
+              </div>
+              <div class="main__descr">
+                <!--<p>
+                  Поочередно выберите темы для вашей презентации и перетащите
+                  их на свободные карточки ниже. Если же в списке нет нужных
+                  вам тем нажмите на кнопку «Перегенерировать».
+                </p>-->
+              </div>
+
+              <div class="main__subjects-wrap">
+                <div class="spinner-container">
+                  <div class="spinner"></div>
+                </div>
+                <div class="main__subjects subject">
+                  <div id="top" class="subject__items">
+                    <div class="subject__item">
+                      <input class="subject__item-input" type="text" placeholder="" value="Типы и виды вулканов">
+  
+                      <div class="card__dropdown">
+                        <button class="card__dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"
+                          onclick="toggleDropdown(this)">
+                          <span id="span">Добавить интерактив</span>
+                          <svg class="card__dropdown-icon" width="20" height="20" aria-hidden="true" role="img"
+                            viewBox="0 0 24 24" fill="none">
+                            <path
+                              d="M19.9201 8.94995L13.4001 15.47C12.6301 16.24 11.3701 16.24 10.6001 15.47L4.08008 8.94995"
+                              stroke="#343434" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                          </svg>
+                        </button>
+                        <div class="card__dropdown-content">
+                          <label class="checkbox-label"><input type="checkbox" /> Вовлекающий вопрос по
+                            теме</label><label class="checkbox-label"><input type="checkbox" /> Вопрос с выбором
+                            ответа</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="subject__item">
+                      <input class="subject__item-input" type="text" value="Самые опасные вулканы">
+  
+                      <div class="card__dropdown">
+                        <button class="card__dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"
+                          onclick="toggleDropdown(this)">
+                          <span id="span">Добавить интерактив</span><svg class="card__dropdown-icon" width="20" height="20"
+                            aria-hidden="true" role="img" viewBox="0 0 24 24" fill="none">
+                            <path
+                              d="M19.9201 8.94995L13.4001 15.47C12.6301 16.24 11.3701 16.24 10.6001 15.47L4.08008 8.94995"
+                              stroke="#343434" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                          </svg>
+                        </button>
+                        <div class="card__dropdown-content">
+                          <label class="checkbox-label"><input type="checkbox" /> Вовлекающий вопрос по
+                            теме</label><label class="checkbox-label"><input type="checkbox" /> Вопрос с выбором
+                            ответа</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="subject__item">
+                      <input class="subject__item-input" type="text" value="Механизм извержения вулкана">
+  
+                      <div class="card__dropdown">
+                        <button class="card__dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"
+                          onclick="toggleDropdown(this)">
+                          <span id="span">Добавить интерактив</span><svg class="card__dropdown-icon" width="20" height="20"
+                            aria-hidden="true" role="img" viewBox="0 0 24 24" fill="none">
+                            <path
+                              d="M19.9201 8.94995L13.4001 15.47C12.6301 16.24 11.3701 16.24 10.6001 15.47L4.08008 8.94995"
+                              stroke="#343434" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                          </svg>
+                        </button>
+                        <div class="card__dropdown-content">
+                          <label class="checkbox-label"><input type="checkbox" /> Вовлекающий вопрос по
+                            теме</label><label class="checkbox-label"><input type="checkbox" /> Вопрос с выбором
+                            ответа</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="subject__item">
+                      <input class="subject__item-input" type="text"
+                        value="Строение вулкана и продуктов его извержения">
+  
+                      <div class="card__dropdown">
+                        <button class="card__dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"
+                          onclick="toggleDropdown(this)">
+                          <span id="span">Добавить интерактив</span><svg class="card__dropdown-icon" width="20" height="20"
+                            aria-hidden="true" role="img" viewBox="0 0 24 24" fill="none">
+                            <path
+                              d="M19.9201 8.94995L13.4001 15.47C12.6301 16.24 11.3701 16.24 10.6001 15.47L4.08008 8.94995"
+                              stroke="#343434" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                          </svg>
+                        </button>
+                        <div class="card__dropdown-content">
+                          <label class="checkbox-label"><input type="checkbox" /> Вовлекающий вопрос по
+                            теме</label><label class="checkbox-label"><input type="checkbox" /> Вопрос с выбором
+                            ответа</label>
+                        </div>
+                      </div>
+  
+                    </div>
+                    <div class="subject__item">
+  
+                      <input class="subject__item-input" type="text" value="Где располагаются вулканы?">
+  
+                      <div class="card__dropdown">
+                        <button class="card__dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"
+                          onclick="toggleDropdown(this)">
+                          <span id="span">Добавить интерактив</span><svg class="card__dropdown-icon" width="20" height="20"
+                            aria-hidden="true" role="img" viewBox="0 0 24 24" fill="none">
+                            <path
+                              d="M19.9201 8.94995L13.4001 15.47C12.6301 16.24 11.3701 16.24 10.6001 15.47L4.08008 8.94995"
+                              stroke="#343434" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                          </svg>
+                        </button>
+                        <div class="card__dropdown-content">
+                          <label class="checkbox-label"><input type="checkbox" /> Вовлекающий вопрос по
+                            теме</label><label class="checkbox-label"><input type="checkbox" /> Вопрос с выбором
+                            ответа</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="subject__item">
+                      <input class="subject__item-input" type="text" value="Спящие вулканы">
+  
+                      <div class="card__dropdown">
+                        <button class="card__dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"
+                          onclick="toggleDropdown(this)">
+                          <span id="span">Добавить интерактив</span><svg class="card__dropdown-icon" width="20" height="20"
+                            aria-hidden="true" role="img" viewBox="0 0 24 24" fill="none">
+                            <path
+                              d="M19.9201 8.94995L13.4001 15.47C12.6301 16.24 11.3701 16.24 10.6001 15.47L4.08008 8.94995"
+                              stroke="#343434" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                          </svg>
+                        </button>
+                        <div class="card__dropdown-content">
+                          <label class="checkbox-label"><input type="checkbox" /> Вовлекающий вопрос по
+                            теме</label><label class="checkbox-label"><input type="checkbox" /> Вопрос с выбором
+                            ответа</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="subject__item">
+                      <input class="subject__item-input" type="text" value="История происхождения слова «Вулкан»">
+                      <div class="card__dropdown">
+                        <button class="card__dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"
+                          onclick="toggleDropdown(this)">
+                          <span id="span">Добавить интерактив</span><svg class="card__dropdown-icon" width="20" height="20"
+                            aria-hidden="true" role="img" viewBox="0 0 24 24" fill="none">
+                            <path
+                              d="M19.9201 8.94995L13.4001 15.47C12.6301 16.24 11.3701 16.24 10.6001 15.47L4.08008 8.94995"
+                              stroke="#343434" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                          </svg>
+                        </button>
+                        <div class="card__dropdown-content">
+                          <label class="checkbox-label"><input type="checkbox" /> Вовлекающий вопрос по
+                            теме</label><label class="checkbox-label"><input type="checkbox" /> Вопрос с выбором
+                            ответа</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="subject__item">
+                      <input class="subject__item-input" type="text" value="Потухшие вулканы">
+  
+                      <div class="card__dropdown">
+                        <button class="card__dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"
+                          onclick="toggleDropdown(this)">
+                          <span id="span">Добавить интерактив</span><svg class="card__dropdown-icon" width="20" height="20"
+                            aria-hidden="true" role="img" viewBox="0 0 24 24" fill="none">
+                            <path
+                              d="M19.9201 8.94995L13.4001 15.47C12.6301 16.24 11.3701 16.24 10.6001 15.47L4.08008 8.94995"
+                              stroke="#343434" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                          </svg>
+                        </button>
+                        <div class="card__dropdown-content">
+                          <label class="checkbox-label"><input type="checkbox" /> Вовлекающий вопрос по
+                            теме</label><label class="checkbox-label"><input type="checkbox" /> Вопрос с выбором
+                            ответа</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="subject__item">
+                      <input class="subject__item-input" type="text" value="Разные типы лав">
+  
+                      <div class="card__dropdown">
+                        <button class="card__dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"
+                          onclick="toggleDropdown(this)">
+                          <span id="span">Добавить интерактив</span><svg class="card__dropdown-icon" width="20" height="20"
+                            aria-hidden="true" role="img" viewBox="0 0 24 24" fill="none">
+                            <path
+                              d="M19.9201 8.94995L13.4001 15.47C12.6301 16.24 11.3701 16.24 10.6001 15.47L4.08008 8.94995"
+                              stroke="#343434" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                          </svg>
+                        </button>
+                        <div class="card__dropdown-content">
+                          <label class="checkbox-label"><input type="checkbox" /> Вовлекающий вопрос по
+                            теме</label><label class="checkbox-label"><input type="checkbox" /> Вопрос с выбором
+                            ответа</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="subject__item">
+                      <input class="subject__item-input" type="text" value="Образование вулканов">
+  
+                      <div class="card__dropdown">
+                        <button class="card__dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"
+                          onclick="toggleDropdown(this)">
+                          <span id="span">Добавить интерактив</span><svg class="card__dropdown-icon" width="20" height="20"
+                            aria-hidden="true" role="img" viewBox="0 0 24 24" fill="none">
+                            <path
+                              d="M19.9201 8.94995L13.4001 15.47C12.6301 16.24 11.3701 16.24 10.6001 15.47L4.08008 8.94995"
+                              stroke="#343434" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                          </svg>
+                        </button>
+                        <div class="card__dropdown-content">
+                          <label class="checkbox-label"><input type="checkbox" /> Вовлекающий вопрос по
+                            теме</label><label class="checkbox-label"><input type="checkbox" /> Вопрос с выбором
+                            ответа</label>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="subject__item-btn">
+                      <button class="card__btn btn-blue btn-subject">
+                        Добавить свою подтему
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main__cards">
+                <h3 class="main__header header-card">Выбранные подтемы</h3>
+                <div class="main__cards-wrap">
+                  <div class="main__cards-content">
+                    <article class="main__item main__item-1" id="item1">
+                      <div class="card__body card-1">
+                        <span class="card__index-number">1</span>.
+                        <span class="card__body-text">Перетащите одну из карточек выше</span>
+                      </div>
+                      <div class="card__bottom">
+                        <div class="card__delete">
+                          <button class="btn-blue" onclick="showDeleteModal(this)">
+                            Удалить
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="main__item main__item-2" id="item2">
+                      <div class="card__body card-2">
+                        <span class="card__index-number">2</span>.
+                        <span class="card__body-text">Перетащите одну из карточек выше</span>
+                      </div>
+                      <div class="card__bottom">
+                        <div class="card__delete">
+                          <button class="btn-blue" onclick="showDeleteModal(this)">
+                            Удалить
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="main__item main__item-3" id="item3">
+                      <div class="card__body card-3">
+                        <span class="card__index-number">3</span>.
+                        <span class="card__body-text">Перетащите одну из карточек выше</span>
+                      </div>
+                      <div class="card__bottom">
+                        <div class="card__delete">
+                          <button class="btn-blue" onclick="showDeleteModal(this)">
+                            Удалить
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="main__cards-btn">
+                    <button id="addBlockButton" class="card__btn btn-blue" onclick="addBlock()">
+                      Добавить подтему (4)
+                    </button>
+                  </div>
+
+                  <div id="overlay" onclick="closeDeleteModal()"></div>
+
+                  <div id="deleteModal" class="main__modal">
+                    <p>Вы действительно хотите удалить данную подтему?</p>
+                    <button class="modal__cancel" onclick="closeDeleteModal()">
+                      Отмена
+                    </button>
+                    <button class="modal__delete" onclick="deleteBlock()">
+                      Удалить
+                    </button>
+                  </div>
+                </div>
+
+                <div class="main__info">
+                  <p>* максимальное количество подтем в презентации – 7</p>
+                </div>
+              </div>
+              <div class="form__container-btn">
+                <a href="screen-01.html" id="btnReturn" class="form__back-btn"></a>
+                <button id="nextStep" class="form__next-btn">
+                  Далее
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+<script src="https://unpkg.com/popper.js@1"></script>
+<script src="https://unpkg.com/tippy.js@5"></script>
+
+  <script src="js/screenSecond.js"></script>
+</body>
+
+</html>

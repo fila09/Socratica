@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap" rel="stylesheet">
+
+  <title>Сократика</title>
+</head>
+
+<body style="background-color: #fdfeff;">
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container container">
+        <a href="index.html" class="header__logo">
+          <img src="img/logo.svg" alt="Logo">
+        </a>
+      </div>
+    </header>
+    <main class="page">
+      <section class="page__main main">
+        <div class="main__container container container-screen-01">
+          <div class="main__image">
+            <img src="img/screen-01/image.png" alt="Image">
+          </div>
+          <div class="main__content">
+            <h2 class="main__subtitle">01 Заполните форму</h2>
+            <div class="main__form form">
+              <form action="#" class="form">
+                <div class="form__container">
+                  <div class="form__box box-input">
+                    <input type="text" id="answerInput" class="form__input" placeholder="Напишите что-то конкретное"
+                      autocomplete="off">
+                    <label for="answerInput" class="form__label label">Тема урока</label>
+                    <button class="form__cancel-btn" onclick="clearInput()"></button>
+                  </div>
+                  <div class="form__box box-select">
+                    <label for="select" id="labelSelect" class="form__label label label-select">Класс</label>
+                    <select id="select" class="form__select">
+                      <option value="">4</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+
+                  </div>
+
+                </div>
+                <div class="form__answer answer" id="answerOptionsContainer">
+                  <div class="answer__option" onclick="setAnswer('Генетика')">Генетика</div>
+                  <div class="answer__option" onclick="setAnswer('Анатомия человека')">Анатомия человека</div>
+                  <div class="answer__option" onclick="setAnswer('Вулканы')">Вулканы</div>
+                  <div class="answer__option" onclick="setAnswer('Зимние виды спорта')">Зимние виды спорта
+                  </div>
+                  <div class="answer__option" onclick="setAnswer('Радуга')">Радуга</div>
+                  <div class="answer__option" onclick="setAnswer('Индийская культура')">Индийская культура
+                  </div>
+                </div>
+                <button class="form-btn btn-blue" onclick="showMoreOptions()">Показать больше вариантов</button>
+
+                <div class="form__textarea">
+                  <textarea id="textarea" class="custom-textarea" placeholder="Напишите свою учебную цель"
+                    maxlength="200"></textarea>
+                  <label for="textarea" class="form__label label">Цель урока</label>
+                  <div class="char-count" id="charCount">0/200</div>
+                </div>
+                <div class="form__container-btn">
+                  <a href="index.html" id="btnReturn" class="form__back-btn"></a>
+                  <button id="nextStep" class="form__next-btn" onclick="submitForm()" disabled>Следующий шаг</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/choices.min.js"></script>
+  <script src="js/screenFirst.js"></script>
+</body>
+
+</html>

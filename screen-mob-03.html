@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:regular,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap" rel="stylesheet">
+  <title>Сократика</title>
+</head>
+<body>
+  <div class="wrapper">
+    <main class="page">
+      <section class="page__mobile mobile">
+        <div class="mobile__container">
+          <div class="mobile__content">
+            <h3 class="mobile__subtitle">Ответь на вопрос</h3>
+            <div class="mobile__image mobile__image-03">
+              <!--<img src="img/screen-mobile/mobile-03.svg" alt="Image">-->
+              <!--<div class="mobile__image-time">
+                <p>01:30</p>
+              </div>-->
+              <div class="mobile__timer" id="timer-container">
+                <svg height="100%" width="100%" viewBox="0 0 100 100">
+                    <circle id="timer-circle" cx="50%" cy="50%" r="45%" fill="transparent" stroke="#3ca9f0" stroke-width="5" />
+                </svg>
+                <div class="mobile__image-time" id="timer">03:00</div>
+              </div>
+            </div>
+            
+            <div class="mobile__text">
+              <p>Какие шаги ты мог бы предпринять, чтобы внедрить более здоровые привычки в свою жизнь?</p>
+            </div>
+
+            <div class="mobile__answer">
+              <textarea id="textarea" placeholder="Введи свой ответ"></textarea>
+            </div>
+
+
+            <div class="mobile__button mobile__button-blue">
+              <button id="mobileBtn" class="mobile__btn" disabled>Отправить</button>
+            </div>
+
+          </div>
+          
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/screenMobile.js"></script>
+</body>
+</html>

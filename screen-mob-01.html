@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:regular,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap" rel="stylesheet">
+  <title>Сократика</title>
+</head>
+<body>
+  <div class="wrapper">
+    <main class="page">
+      <section class="page__mobile mobile">
+        <div class="mobile__container">
+          <div class="mobile__content">
+            <div class="mobile__image mobile__logo">
+              <img src="img/screen-mobile/mobile-01.svg" alt="Logo">
+            </div>
+            <div class="mobile__text">
+              <p>Введите код, который изображен на слайде презентации</p>
+            </div>
+            <div class="mobile__code">
+                <div class="mobile__input input-mobile">
+                  <input class="input-mobile__single" id="mobileInput" type="number" min="0" max="9" oninput="limitToOneDigit()">
+                </div>
+                <div class="mobile__input">
+                  <input class="input-mobile__single" id="mobileInput" type="number" min="0" max="9" oninput="limitToOneDigit()">
+                </div>
+                <div class="mobile__input">
+                  <input class="input-mobile__single" id="mobileInput" type="number" min="0" max="9" oninput="limitToOneDigit()">
+                </div>
+                <div class="mobile__input">
+                  <input class="input-mobile__single" id="mobileInput" type="number" min="0" max="9" oninput="limitToOneDigit()">
+                </div>
+                <div class="mobile__input">
+                  <input class="input-mobile__single" id="mobileInput" type="number" min="0" max="9" oninput="limitToOneDigit()">
+                </div>
+                <div class="mobile__input">
+                  <input class="input-mobile__single" id="mobileInput" type="number" min="0" max="9" oninput="limitToOneDigit()">
+                </div>
+              
+            </div>
+            <div class="mobile__button">
+              <button id="mobileBtn" class="mobile__btn" disabled>Присоединиться</button>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/screenMobile.js"></script>
+</body>
+</html>
