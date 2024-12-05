@@ -1,0 +1,14 @@
+@media (max-width: 1440px) {
+  .main__subtitle {
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+}
+
+
+
+/*@media (max-width: 1200px) {
+  .header {
+      padding-bottom: 20px;
+  }
+}*/
